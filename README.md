@@ -315,4 +315,6 @@ Figures:
 
 **Note: Conclusions are based on the Adam optimizer and OneCycle LR Scheduler. I haven't experimented with other optimizers to see if dropping their `state` is more impactful**
 
+*Edit Note: I'm not proposing to always throw optimizers away, I still believe the general guideline is to use the same optimizer and keep the history. Kindly share resources if anyone found results showing the importance of using the same optimizer :)*
+
 Thanks for reading :)
