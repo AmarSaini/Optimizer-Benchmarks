@@ -308,4 +308,11 @@ Figures:
 | ![Image](https://raw.githubusercontent.com/AmarSaini/Optimizer-Benchmarks/master/Imagewoof%20Figures/Train%20Loss.png) | ![Image](https://raw.githubusercontent.com/AmarSaini/Optimizer-Benchmarks/master/Imagewoof%20Figures/Valid%20Loss.png) |
 | ![Image](https://raw.githubusercontent.com/AmarSaini/Optimizer-Benchmarks/master/Imagewoof%20Figures/Train%20Accuracy.png) | ![Image](https://raw.githubusercontent.com/AmarSaini/Optimizer-Benchmarks/master/Imagewoof%20Figures/Valid%20Accuracy.png) |
 
-:)
+## Short Conclusion
+
+- OneCycle LR > Constant LR
+- Making a new optimizer *vs.* Preserving `state` both achieve very similar performance. i.e. Discarding an optimizer's `state` didn't really hurt the model's performance, with or without an LR Scheduler.
+
+**Note: Conclusions are based on the Adam optimizer and OneCycle LR Scheduler. I haven't experimented with other optimizer's to see if dropping their `state` is more impactful**
+
+Thanks for reading :)
