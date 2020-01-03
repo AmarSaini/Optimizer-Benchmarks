@@ -311,7 +311,7 @@ Figures:
 ## Short Conclusion
 
 - OneCycle LR > Constant LR
-- *Making a new optimizer* **vs.** *Preserving `state` and re-using the same optimizer* both achieve very similar performance. i.e. Discarding an optimizer's `state` didn't really hurt the model's performance, with or without an LR Scheduler.
+- *Making a new optimizer* **vs.** *Preserving `state` and re-using the same optimizer* both achieve very similar performance. i.e. Discarding an optimizer's `state` didn't really hurt the model's performance, with or without an LR Scheduler. Maybe the state is learned quickly.
 
 **Note: Conclusions are based on the Adam optimizer and OneCycle LR Scheduler. I haven't experimented with other optimizers to see if dropping their `state` is more impactful**
 
